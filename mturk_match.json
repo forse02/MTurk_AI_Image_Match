@@ -1,0 +1,752 @@
+[
+    {
+        "prompt": "Busy streets in Manhattan",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image1_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image1_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image1_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image1_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "The Chiefs winning the super bowl",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image2_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image2_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image2_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image2_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "United States President giving a speech",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image3_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image3_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image3_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image3_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A tourist taking a picture at the statue of liberty",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image4_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image4_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image4_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image4_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A kid getting a football jersey present and crying",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image5_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image5_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image5_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image5_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A trader ecstatic as stock rises",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image6_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image6_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image6_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image6_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A Viking on a ship shouting",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image7_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image7_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image7_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image7_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person casting a vote",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image8_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image8_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image8_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image8_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person driving a car on the highway",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image9_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image9_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image9_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image9_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "Two people playing pickle ball",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image10_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image10_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image10_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image10_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A professor giving a lecture",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image11_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image11_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image11_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image11_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A rock band concert",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image12_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image12_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image12_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image12_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "Blizzard in Miami",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image13_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image13_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image13_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image13_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A chef cooking steak",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image14_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image14_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image14_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image14_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A sunset over a quiet countryside road",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image15_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image15_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image15_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image15_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person spilling water",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image16_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image16_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image16_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image16_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person eating a burger",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image17_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image17_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image17_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image17_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A programmer writing code",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image18_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image18_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image18_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image18_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A saxophone performance",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image19_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image19_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image19_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image19_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "People parading in the streets",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image20_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image20_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image20_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image20_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A crowded grocery store",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image21_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image21_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image21_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image21_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A cabin in the mountainous woods",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image22_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image22_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image22_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image22_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A magnificent catholic church",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image23_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image23_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image23_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image23_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A student giving a presentation",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image24_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image24_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image24_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image24_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person playing with a dog",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image25_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image25_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image25_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image25_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person working out at the gym",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image26_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image26_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image26_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image26_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person mowing the lawn",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image27_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image27_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image27_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image27_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A thunderstorm at night",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image28_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image28_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image28_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image28_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A dog playing poker with a monkey",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image29_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image29_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image29_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image29_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "New York City overtaken by nature",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image30_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image30_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image30_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image30_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A post-apocalyptic city",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image31_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image31_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image31_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image31_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A steam-punk world",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image32_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image32_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image32_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image32_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person fishing from a dock at sunrise",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image33_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image33_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image33_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image33_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person shoveling snow from a driveway",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image34_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image34_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image34_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image34_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A group of people hiking",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image35_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image35_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image35_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image35_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A train arriving at a rural station",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image36_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image36_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image36_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image36_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A Roman emperor using a smart phone",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image37_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image37_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image37_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image37_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A group of people in formal clothes dancing",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image38_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image38_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image38_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image38_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "An abandoned car in the countryside",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image39_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image39_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image39_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image39_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A courthouse building with a statue in front",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image40_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image40_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image40_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image40_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A super crowded train",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image41_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image41_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image41_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image41_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A family eating dinner together at home",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image42_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image42_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image42_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image42_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A traffic jam during rush hour",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image43_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image43_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image43_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image43_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "Turkeys crossing a busy intersection",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image44_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image44_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image44_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image44_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A person refueling at a gas station",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image45_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image45_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image45_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image45_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "President shaking the hands of a coal miner",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image46_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image46_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image46_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image46_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "Person walking in a blizzard",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image47_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image47_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image47_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image47_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A samurai and a knight greet each other",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image48_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image48_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image48_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image48_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "Abe Lincoln meeting with George Washington",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image49_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image49_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image49_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image49_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "prompt": "A dog playing with a cat",
+        "images": [
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image50_dalle.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image50_google.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image50_grok.jpeg",
+            "https://ai-image-mturk-bucket.s3.us-east-2.amazonaws.com/image50_ms.jpeg"
+        ],
+        "models": [
+            "Dalle",
+            "Grok",
+            "Google",
+            "Microsoft"
+        ]
+    }
+]
