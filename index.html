@@ -76,6 +76,38 @@
       </script>
 
     <h2 style="text-align: center;">Match Each Image to Its Generation Model</h2>
+
+    
+    <h3 style="margin-top:40px;">Example:</h3>
+    <p><strong>Prompt: Big City at Sunset</strong></p>
+    <ul style="text-align:left; display:inline-block;">
+        <li><strong>Dalle</strong>: vivid colors, dramatic lighting, cinematic & stylized, looks slightly unreal/game-like.</li>
+        <li><strong>Grok</strong>: muted, realistic lighting/colors, detailed, subdued vibe, most photorealistic.</li>
+        <li><strong>Google</strong>: balanced colors, warm gradients, smooth, visually pleasing realism.</li>
+        <li><strong>Microsoft</strong>: bright neons, hyper-polished, fantasy aesthetic, vibrant, maximalist saturation.</li>
+    </ul>
+    <div style="display:flex; gap:15px; justify-content:center; margin-bottom:40px;">
+        <div>
+            <img src="https://ai-image-mturk-bucket.s3.amazonaws.com/image_ex_google.jpeg" width="250" height="200" style="object-fit: cover;">
+            <p><strong>Google</strong></p>
+        </div>
+        <div>
+            <img src="https://ai-image-mturk-bucket.s3.amazonaws.com/image_ex_ms.jpeg" width="250" height="200" style="object-fit: cover;">
+            <p><strong>Microsoft</strong></p>
+        </div>
+        <div>
+            <img src="https://ai-image-mturk-bucket.s3.amazonaws.com/image_ex_grok.jpeg" width="250" height="200" style="object-fit: cover;">
+            <p><strong>Grok</strong></p>
+        </div>
+        <div style="text-align:center;">
+            <img src="https://ai-image-mturk-bucket.s3.amazonaws.com/image_ex_dalle.jpeg" width="250" height="200" style="object-fit: cover;">
+            <p><strong>Dalle</strong></p>
+        </div>
+    </div>
+
+    <hr style="width:80%; margin: 40px auto; border-top: 2px solid #ddd;">
+
+
     <p style="text-align: center;"><strong>Prompt:</strong> <span id="prompt"></span></p>
 
     <p style="font-size: 16px; font-weight: bold;">Instructions:</p>
@@ -85,6 +117,7 @@
         <li>Each model must be used <strong>exactly once</strong>.</li>
         <li>If you change your mind, you can <strong>drag the model name back</strong> to the selection area and choose again.</li>
     </ul>
+
 
     <div class="container">
         

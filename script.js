@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let dropContainer = document.getElementById("drop-container");
             let modelsContainer = document.getElementById("models-container");
 
+
+            task.images.sort(() => Math.random() - 0.5);
             task.images.forEach((url, index) => {
                 let imgDiv = document.createElement("div");
                 imgDiv.classList.add("box");
@@ -33,6 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 imagesContainer.appendChild(imgDiv);
                 dropContainer.appendChild(dropBox);
             });
+
+            task.models.sort(() => Math.random() - 0.5);
 
             task.models.forEach(model => {
                 let dragItem = document.createElement("div");
