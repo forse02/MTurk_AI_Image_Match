@@ -144,7 +144,7 @@ function submitResults() {
         "image4_model": document.getElementById("image3_model").value
     };
 
-    fetch("https://script.google.com/macros/s/AKfycbwJXrJxUibsO0mT7LbKOvteW6WsA1i6NxNi9ujk0gIbQaMbOWHCqaiMWBt0eSoaJWMI/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxlkqErI8d43I9ytfCsuMmo9buurRF1hccKCxBxeJooFyFc4MPbSqPtdtEETxUMSNIB/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result)
