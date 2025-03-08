@@ -144,15 +144,15 @@ function submitResults() {
         "image4_model": document.getElementById("image3_model").value
     };
 
-    fetch("https://script.google.com/macros/s/AKfycby26aIoi0fzMTwwMwqevEtzsK0GXOVLhP9Q_3-paAraUINnwpA_8I-Nvgc9T9yadWMc/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbz6ejLOzhXiP3STZKGsGnUSvJaFg_HyTKmIurCc_81-NThZnOtDo4oFGPG00yRMClze/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result)
     })
     .then(response => response.json())
     .then(data => {
-        console.log("Success:", data);
-        alert("Submission successful! Your MTurk code: 123456");
+        console.log("Submission Successful:", data);
+        alert("Your response has been submitted!");
     })
-    .catch(error => console.error("Error:", error));
+    .catch(error => console.error("Error submitting data:", error));
 }
