@@ -144,23 +144,15 @@ function submitResults() {
         "image4_model": document.getElementById("image3_model").value
     };
 
-    console.log("Submitting:", result);
-
     fetch("https://script.google.com/macros/s/AKfycby26aIoi0fzMTwwMwqevEtzsK0GXOVLhP9Q_3-paAraUINnwpA_8I-Nvgc9T9yadWMc/exec", {
         method: "POST",
-        mode: "cors", // Changed from "no-cors" to "cors"
-        headers: {
-            "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result)
     })
     .then(response => response.json())
     .then(data => {
         console.log("Success:", data);
-        alert("Submission successful! Your response has been saved.");
+        alert("Submission successful! Your MTurk code: 123456");
     })
-    .catch(error => {
-        console.error("Error submitting data:", error);
-        alert("Error submitting data. Check the console.");
-    });
+    .catch(error => console.error("Error:", error));
 }
