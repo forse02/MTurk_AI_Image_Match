@@ -100,6 +100,20 @@ function drop(ev, inputId) {
     updateSubmitButton();
 }
 
+function nextTask() {
+    // currentTaskIndex++;
+    // if (currentTaskIndex >= tasks.length) {
+    //     document.body.innerHTML = "<h2>All tasks completed! Thank you.</h2>";
+    // } else {
+    //     document.getElementById("completion-section").style.display = "none"; // Hide completion code
+    //     document.getElementById("submit-button").disabled = true; // Reset submit button
+    //     document.getElementById("next-task-btn").disabled = true; // Disable "Next Task" button again
+    //     loadTask(currentTaskIndex);
+    // }
+    location.reload();
+}
+
+
 
 function checkCompletion() {
     let allFilled = true;
@@ -146,11 +160,22 @@ function submitResults() {
 
     fetch("https://formspree.io/f/mqapzyyl", {
         method: "POST",
-        headers: {"Content-Type": "application/json"},
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result)
-      })
-      .then(resp => resp.json())
-      .then(data => alert("submitted"))
-      .catch(err => console.log(err));
-      
+    })
+    .then(resp => resp.json())
+    .then(data => {
+        alert("Submission successful!");
+
+        // Generate and display MTurk completion code
+        let completionCode = Math.random().toString(36).substring(2, 10).toUpperCase();
+        document.getElementById("mturk-code").innerText = completionCode;
+        document.getElementById("completion-section").style.display = "block";
+
+        // Disable Submit Button & Enable Next Task Button
+        document.getElementById("submit-button").disabled = true;
+        document.getElementById("next-task-btn").disabled = false;
+    })
+    .catch(err => console.log(err));
 }
+

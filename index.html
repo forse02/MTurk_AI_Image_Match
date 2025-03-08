@@ -55,6 +55,26 @@
 </head>
 <body>
 
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+      
+        let assignmentId = getUrlParameter('assignmentId');
+        let workerId = getUrlParameter('workerId');
+        let turkSubmitTo = getUrlParameter('turkSubmitTo') || "https://www.mturk.com";
+      
+        // Disable submission if assignmentId is "ASSIGNMENT_ID_NOT_AVAILABLE"
+        window.onload = function() {
+            if (assignmentId === "ASSIGNMENT_ID_NOT_AVAILABLE") {
+                document.getElementById("submit-button").disabled = true;
+            }
+        };
+      </script>
+
     <h2 style="text-align: center;">Match Each Image to Its Generation Model</h2>
     <p style="text-align: center;"><strong>Prompt:</strong> <span id="prompt"></span></p>
 
@@ -84,6 +104,13 @@
 
         <button id="submit-button" onclick="submitResults()" disabled>Submit</button>
 
+    </div>
+
+    <div id="completion-section" style="display: none; margin-top: 20px;">
+        <h3>Your MTurk Completion Code:</h3>
+        <p id="mturk-code" style="font-size: 20px; font-weight: bold;"></p>
+        <p>Copy this code and paste it into MTurk to confirm your work.</p>
+        <button id="next-task-btn" onclick="nextTask()" disabled>Next Task</button>
     </div>
 
 </body>
