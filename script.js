@@ -144,15 +144,13 @@ function submitResults() {
         "image4_model": document.getElementById("image3_model").value
     };
 
-    fetch("https://script.google.com/macros/s/AKfycbxG6rF_g4DUZyFv6DZTNpcsBd2S3ZCOpMMST4nq6SfcUkjIk0Opxl5TUDavPkx-Dh1A/exec", {
+    fetch("https://formspree.io/f/mqapzyyl", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {"Content-Type": "application/json"},
         body: JSON.stringify(result)
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log("Submission Successful:", data);
-        alert("Your response has been submitted!");
-    })
-    .catch(error => console.error("Error submitting data:", error));
+      })
+      .then(resp => resp.json())
+      .then(data => alert("submitted"))
+      .catch(err => console.log(err));
+      
 }
