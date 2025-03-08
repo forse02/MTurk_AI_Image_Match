@@ -165,7 +165,6 @@ function submitResults() {
     })
     .then(resp => resp.json())
     .then(data => {
-        alert("Submission successful!");
 
         // Generate and display MTurk completion code
         let completionCode = Math.random().toString(36).substring(2, 10).toUpperCase();
