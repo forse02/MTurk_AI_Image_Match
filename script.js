@@ -21,20 +21,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             task.images.sort(() => Math.random() - 0.5);
+
             task.images.forEach((url, index) => {
                 let imgDiv = document.createElement("div");
                 imgDiv.classList.add("box");
-                imgDiv.innerHTML = `<img src="${url}" width="100%" height="80%" style="object-fit: cover;">`;
-
+                imgDiv.innerHTML = `<img src="${url}" width="100%" height="80%" style="object-fit: cover;" onclick="getPrediction('${url}')">`;  
+            
                 let dropBox = document.createElement("div");
                 dropBox.classList.add("drop-box");
                 dropBox.setAttribute("ondrop", `drop(event, 'image${index}_model')`);
                 dropBox.setAttribute("ondragover", "allowDrop(event)");
                 dropBox.innerHTML = `<input type="hidden" id="image${index}_model" value="">`;
-
+            
                 imagesContainer.appendChild(imgDiv);
                 dropContainer.appendChild(dropBox);
             });
+            
+
 
             task.models.sort(() => Math.random() - 0.5);
 
@@ -105,16 +108,40 @@ function drop(ev, inputId) {
 }
 
 function nextTask() {
-    // currentTaskIndex++;
-    // if (currentTaskIndex >= tasks.length) {
-    //     document.body.innerHTML = "<h2>All tasks completed! Thank you.</h2>";
-    // } else {
-    //     document.getElementById("completion-section").style.display = "none"; // Hide completion code
-    //     document.getElementById("submit-button").disabled = true; // Reset submit button
-    //     document.getElementById("next-task-btn").disabled = true; // Disable "Next Task" button again
-    //     loadTask(currentTaskIndex);
-    // }
     location.reload();
+}
+
+
+async function getPrediction(imageUrl) {
+    // Replace with your ngrok URL from the Colab output
+    const apiUrl = "https://e358-34-60-129-26.ngrok-free.app/predict";
+    
+    try {
+        console.log("Sending request to:", apiUrl);
+        console.log("Image url:", imageUrl)
+        const response = await fetch(apiUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ url: imageUrl })
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        console.log("API Response:", result);
+
+        if (result.error) {
+            document.getElementById("prediction-result").innerText = `Error: ${result.error}`;
+        } else {
+            document.getElementById("prediction-result").innerText = 
+                `Prediction: ${result.model} (Confidence: ${(result.confidence * 100).toFixed(0)}%)`;
+        }
+    } catch (error) {
+        console.error("Error fetching prediction:", error);
+        document.getElementById("prediction-result").innerText = `Error: ${error.message}`;
+    }
 }
 
 
@@ -153,6 +180,35 @@ function updateSubmitButton() {
 }
 
 
+// function submitResults() {
+//     let result = {
+//         "prompt": document.getElementById("prompt").innerText,
+//         "image1_model": document.getElementById("image0_model").value,
+//         "image2_model": document.getElementById("image1_model").value,
+//         "image3_model": document.getElementById("image2_model").value,
+//         "image4_model": document.getElementById("image3_model").value
+//     };
+
+//     fetch("https://formspree.io/f/mqapzyyl", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify(result)
+//     })
+//     .then(resp => resp.json())
+//     .then(data => {
+
+//         // Generate and display MTurk completion code
+//         let completionCode = Math.random().toString(36).substring(2, 10).toUpperCase();
+//         document.getElementById("mturk-code").innerText = completionCode;
+//         document.getElementById("completion-section").style.display = "block";
+
+//         // Disable Submit Button & Enable Next Task Button
+//         document.getElementById("submit-button").disabled = true;
+//         document.getElementById("next-task-btn").disabled = false;
+//     })
+//     .catch(err => console.log(err));
+// }
+
 function submitResults() {
     let result = {
         "prompt": document.getElementById("prompt").innerText,
@@ -162,23 +218,23 @@ function submitResults() {
         "image4_model": document.getElementById("image3_model").value
     };
 
-    fetch("https://formspree.io/f/mqapzyyl", {
+    fetch("https://e358-34-60-129-26.ngrok-free.app/submit", {  // replace with actual ngrok url
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result)
     })
     .then(resp => resp.json())
     .then(data => {
+            // Generate and display MTurk completion code
+            let completionCode = Math.random().toString(36).substring(2, 10).toUpperCase();
+            document.getElementById("mturk-code").innerText = completionCode;
+            document.getElementById("completion-section").style.display = "block";
 
-        // Generate and display MTurk completion code
-        let completionCode = Math.random().toString(36).substring(2, 10).toUpperCase();
-        document.getElementById("mturk-code").innerText = completionCode;
-        document.getElementById("completion-section").style.display = "block";
-
-        // Disable Submit Button & Enable Next Task Button
-        document.getElementById("submit-button").disabled = true;
-        document.getElementById("next-task-btn").disabled = false;
+            // Disable Submit Button & Enable Next Task Button
+            document.getElementById("submit-button").disabled = true;
+            document.getElementById("next-task-btn").disabled = false;
     })
-    .catch(err => console.log(err));
+    .catch(err => console.log("Error submitting: ", err));
 }
+
 
