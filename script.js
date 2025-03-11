@@ -114,7 +114,7 @@ function nextTask() {
 
 async function getPrediction(imageUrl) {
     // Replace with your ngrok URL from the Colab output
-    const apiUrl = "https://f47f-35-226-125-210.ngrok-free.app/predict";
+    const apiUrl = "https://af8a-35-229-221-98.ngrok-free.app/predict";
     
     try {
         console.log("Sending request to:", apiUrl);
@@ -218,7 +218,7 @@ function submitResults() {
         "image4_model": document.getElementById("image3_model").value
     };
 
-    fetch("https://f47f-35-226-125-210.ngrok-free.app/submit", {  // replace with actual ngrok url
+    fetch("https://af8a-35-229-221-98.ngrok-free.app/submit", {  // replace with actual ngrok url
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result)
