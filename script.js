@@ -25,8 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
             task.images.forEach((url, index) => {
                 let imgDiv = document.createElement("div");
                 imgDiv.classList.add("box");
-                imgDiv.innerHTML = `<img src="${url}" width="100%" height="80%" style="object-fit: cover;" onclick="getPrediction('${url}')">`;  
-            
+                // imgDiv.innerHTML = `<img src="${url}" width="100%" height="80%" style="object-fit: cover;" onclick="getPrediction('${url}')">`;  
+                imgDiv.innerHTML = `<img src="${url}" width="100%" height="80%" style="object-fit: cover;" onclick="getPrediction('${url}', ${index})">`;
+
                 let dropBox = document.createElement("div");
                 dropBox.classList.add("drop-box");
                 dropBox.setAttribute("ondrop", `drop(event, 'image${index}_model')`);
@@ -112,13 +113,44 @@ function nextTask() {
 }
 
 
-async function getPrediction(imageUrl) {
-    // Replace with your ngrok URL from the Colab output
-    const apiUrl = "https://af8a-35-229-221-98.ngrok-free.app/predict";
+// async function getPrediction(imageUrl) {
+//     const apiUrl = "https://ad14-34-85-162-161.ngrok-free.app/predict";
+    
+//     try {
+//         console.log("Sending request to:", apiUrl);
+//         console.log("Image url:", imageUrl)
+//         const response = await fetch(apiUrl, {
+//             method: "POST",
+//             headers: { "Content-Type": "application/json" },
+//             body: JSON.stringify({ url: imageUrl })
+//         });
+
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! Status: ${response.status}`);
+//         }
+
+//         const result = await response.json();
+//         console.log("API Response:", result);
+
+//         if (result.error) {
+//             document.getElementById("prediction-result").innerText = `Error: ${result.error}`;
+//         } else {
+//             document.getElementById("prediction-result").innerText = 
+//                 `Prediction: ${result.model} (Confidence: ${(result.confidence * 100).toFixed(0)}%)`;
+//         }
+//     } catch (error) {
+//         console.error("Error fetching prediction:", error);
+//         document.getElementById("prediction-result").innerText = `Error: ${error.message}`;
+//     }
+// }
+
+async function getPrediction(imageUrl, imageIndex) {
+    const apiUrl = "https://ad14-34-85-162-161.ngrok-free.app/predict";
     
     try {
         console.log("Sending request to:", apiUrl);
-        console.log("Image url:", imageUrl)
+        console.log("Image url:", imageUrl);
+        
         const response = await fetch(apiUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -132,17 +164,24 @@ async function getPrediction(imageUrl) {
         const result = await response.json();
         console.log("API Response:", result);
 
+        // Convert index to ordinal (1st, 2nd, 3rd, 4th)
+        const ordinal = ["1st", "2nd", "3rd", "4th"];
+        let imagePosition = ordinal[imageIndex] || `${imageIndex + 1}th`;
+
+        let predictionElement = document.getElementById("prediction-result");
+
         if (result.error) {
-            document.getElementById("prediction-result").innerText = `Error: ${result.error}`;
+            predictionElement.innerText = `Error: ${result.error}`;
         } else {
-            document.getElementById("prediction-result").innerText = 
-                `Prediction: ${result.model} (Confidence: ${(result.confidence * 100).toFixed(0)}%)`;
+            predictionElement.innerText = 
+                `Prediction for the ${imagePosition} image: ${result.model} (Confidence: ${(result.confidence * 100).toFixed(0)}%)`;
         }
     } catch (error) {
         console.error("Error fetching prediction:", error);
         document.getElementById("prediction-result").innerText = `Error: ${error.message}`;
     }
 }
+
 
 
 
@@ -218,7 +257,7 @@ function submitResults() {
         "image4_model": document.getElementById("image3_model").value
     };
 
-    fetch("https://af8a-35-229-221-98.ngrok-free.app/submit", {  // replace with actual ngrok url
+    fetch("https://ad14-34-85-162-161.ngrok-free.app/submit", {  // replace with actual ngrok url
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result)

@@ -80,7 +80,7 @@
 
     <h3 style="margin-top:40px;">Example:</h3>
     <p><strong>Prompt: Big City at Sunset</strong></p>
-    <ul style="text-align:left; display:inline-block;">
+    <!-- <ul style="text-align:left; display:inline-block;">
         <li><strong>Dalle</strong>: vivid colors, dramatic lighting, cinematic & stylized, looks slightly unreal/game-like.</li>
         <li><strong>Grok</strong>: muted, realistic lighting/colors, detailed, subdued vibe, most photorealistic.</li>
         <li><strong>Google</strong>: balanced colors, warm gradients, smooth, visually pleasing realism.</li>
@@ -103,7 +103,39 @@
             <img src="https://ai-image-mturk-bucket.s3.amazonaws.com/image_ex_dalle.jpeg" width="250" height="200" style="object-fit: cover;">
             <p><strong>Dalle</strong></p>
         </div>
+    </div> -->
+
+    <div style="display:flex; gap:15px; justify-content:center; margin-bottom:40px;">
+        <div>
+            <img src="https://ai-image-mturk-bucket.s3.amazonaws.com/image_ex_google.jpeg" width="250" height="200" style="object-fit: cover;">
+            <p><strong>Google</strong></p>
+            <p style="font-size: 14px; max-width: 250px; text-align: center;">
+                Balanced colors, warm gradients, smooth, visually pleasing realism.
+            </p>
+        </div>
+        <div>
+            <img src="https://ai-image-mturk-bucket.s3.amazonaws.com/image_ex_ms.jpeg" width="250" height="200" style="object-fit: cover;">
+            <p><strong>Microsoft</strong></p>
+            <p style="font-size: 14px; max-width: 250px; text-align: center;">
+                Bright neons, hyper-polished, fantasy aesthetic, vibrant, maximalist saturation.
+            </p>
+        </div>
+        <div>
+            <img src="https://ai-image-mturk-bucket.s3.amazonaws.com/image_ex_grok.jpeg" width="250" height="200" style="object-fit: cover;">
+            <p><strong>Grok</strong></p>
+            <p style="font-size: 14px; max-width: 250px; text-align: center;">
+                Muted, realistic lighting/colors, detailed, subdued vibe, most photorealistic.
+            </p>
+        </div>
+        <div>
+            <img src="https://ai-image-mturk-bucket.s3.amazonaws.com/image_ex_dalle.jpeg" width="250" height="200" style="object-fit: cover;">
+            <p><strong>Dalle</strong></p>
+            <p style="font-size: 14px; max-width: 250px; text-align: center;">
+                Vivid colors, dramatic lighting, cinematic & stylized, looks slightly unreal/game-like.
+            </p>
+        </div>
     </div>
+    
 
     <hr style="width:80%; margin: 40px auto; border-top: 2px solid #ddd;">
 
@@ -116,6 +148,7 @@
         <li>Drag each model name and drop it into the box below the image you believe it generated.</li>
         <li>Each model must be used <strong>exactly once</strong>.</li>
         <li>If you change your mind, you can <strong>drag the model name back</strong> to the selection area and choose again.</li>
+        <li>You can click on each image to see the AI model's prediction as a hint. </li>
     </ul>
 
     <div id="prediction-result"></div>
