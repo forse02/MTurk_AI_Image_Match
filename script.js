@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let modelsContainer = document.getElementById("models-container");
 
 
-            task.images.sort(() => Math.random() - 0.5);
+            // task.images.sort(() => Math.random() - 0.5);
 
             task.images.forEach((url, index) => {
                 let imgDiv = document.createElement("div");
